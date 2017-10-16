@@ -1,18 +1,35 @@
-@import url(bootstrap-4/css/bootstrap.min.css);@import url(bootstrap-4/css/jumbotron.css);.navbar .navbar-brand{background:transparent url(img/logo.svg) no-repeat left 10px;width:100px;height:40px}
+@import url(bootstrap-4/css/bootstrap.min.css);@import url(bootstrap-4/css/jumbotron.css);@font-face{font-family:"sf-pro-text_regular";src:url("fonts/sf-pro-text_regular.woff2") format("woff2")}
+@font-face{font-family:"sf-pro-text_medium";src:url("fonts/sf-pro-text_medium.woff2") format("woff2")}
+@font-face{font-family:"San Francisco";font-weight:100;src:url("fonts/sanfranciscodisplay-ultralight-webfont.woff2")}
+@font-face{font-family:"San Francisco";font-weight:200;src:url("fonts/sanfranciscodisplay-ultralight-webfont.woff2")}
+@font-face{font-family:"San Francisco";font-weight:normal;src:url("fonts/sanfranciscodisplay-medium-webfont.woff2")}
+@font-face{font-family:"San Francisco";font-weight:500;src:url("fonts/sanfranciscodisplay-semibold-webfont.woff2")}
+@font-face{font-family:"San Francisco";font-weight:bold;src:url("fonts/sanfranciscodisplay-bold-webfont.woff2")}
+body{font-family:"sf-pro-text_regular",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:#f4a62c}
+h1,h2,h3,h4{font-family:"San Francisco",Roboto,"Helvetica Neue",Arial,sans-serif;text-align:center}
+h1{font-weight:bold;font-size:4rem;letter-spacing:-0.03em}
+h2{font-weight:500;font-size:3rem}
+h3{font-weight:normal;font-size:1.5rem}
+.navbar .navbar-brand{background:transparent url(img/logo.svg) no-repeat left 10px;width:100px;height:40px}
 .breadcrumbs p{margin-top:1rem}
-.jumbotron{background:url(img/stock/584222958.jpg) center -103px no-repeat;background-size:cover;min-height:280px}
+.jumbotron{border-radius:0;background:url(img/stock/584222958.jpg) center -103px no-repeat;background-size:cover;min-height:280px;margin-bottom:60px}
 hr{width:80%;margin-bottom:10px}
 .btn-asteric{font-size:.8em}
 footer{text-align:center;width:100%;font-size:.8em}
 .btn-container{width:100%;margin:0 auto;text-align:center}
 section{text-align:center;padding:100px 20px}
+section.first{margin-top:100px}
 section.odd{background-color:#f2f2f2}
 section.even{background-color:#fff}
 section img{margin-bottom:30px;max-height:300px;max-width:300px}
-section h1{width:100%}
+section.cta h2{font-weight:200}
+section h1,section h2,section h3{width:100%}
 section .btn-container{width:100%;margin:0 auto;text-align:center}
-@media(min-width:768px){.jumbotron{background:url(img/stock/584222958.jpg) center -130px no-repeat;background-size:cover;min-height:360px}
+@media(min-width:768px){h1,h2,h3,h4{text-align:left}
+.jumbotron{background:url(img/stock/584222958.jpg) center -130px no-repeat;background-size:cover;min-height:360px}
 section{text-align:left}
+section h1,section h2,section h3{width:auto}
 section img{margin-bottom:0}
 }@media(min-width:992px){.jumbotron{background:url(img/stock/584222958.jpg) center -190px no-repeat;background-size:cover;min-height:440px}
 }@media(min-width:1200px){.jumbotron{background:url(img/stock/584222958.jpg) center -240px no-repeat;background-size:cover;min-height:516px}

@@ -1,8 +1,6 @@
-# isolution
+# isolutions
 
-Landing pages template
+##Landing pages template
 
-BS4
-Gulp
-BrowserSync
+BS4, Gulp, BrowserSync
 

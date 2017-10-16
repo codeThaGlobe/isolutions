@@ -1,8 +1,128 @@
+//Get external css
 @import 'bootstrap-4/css/bootstrap.min.css';
 @import 'bootstrap-4/css/jumbotron.css';
 
+//Fonts
+
+/* Text fonts */
+
+@font-face {
+    font-family: "sf-pro-text_regular";
+    src: url("fonts/sf-pro-text_regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "sf-pro-text_medium";
+    src: url("fonts/sf-pro-text_medium.woff2") format("woff2");
+}
+
+
+
+
+
+/** Display Ultra Light */
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 100;
+    src: url("fonts/sanfranciscodisplay-ultralight-webfont.woff2");
+}
+
+
+
+
+
+/** Display Thin */
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 200;
+    src: url("fonts/sanfranciscodisplay-ultralight-webfont.woff2");
+}
+
+
+
+
+
+/** Display Medium */
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: normal;
+    src: url("fonts/sanfranciscodisplay-medium-webfont.woff2");
+}
+
+
+
+
+
+/** Display Semi Bold */
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 500;
+    src: url("fonts/sanfranciscodisplay-semibold-webfont.woff2");
+}
+
+
+
+
+
+/** Display Bold */
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: bold;
+    src: url("fonts/sanfranciscodisplay-bold-webfont.woff2");
+}
+
+
+
+body {
+    font-family: "sf-pro-text_regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+a{
+	color:rgb(244, 166, 44);
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "San Francisco", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: -0.03em;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    h1,
+    h2,
+    h3,
+    h4 {
+
+        text-align: left;
+    }
+}
+
 .navbar {
-	
+
     .navbar-brand {
         background: transparent url(img/logo.svg) no-repeat left 10px;
         width: 100px;
@@ -16,9 +136,11 @@
 }
 
 .jumbotron {
+    border-radius: 0;
     background: url(img/stock/584222958.jpg) center -103px no-repeat;
     background-size: cover;
     min-height: 280px;
+    margin-bottom: 60px;
     @media (min-width: 768px) {
         background: url(img/stock/584222958.jpg) center -130px no-repeat;
         background-size: cover;
@@ -73,8 +195,12 @@ footer {
 }
 
 section {
+
     text-align: center;
     padding: 100px 20px;
+    &.first {
+        margin-top: 100px;
+    }
     &.odd {
         background-color: #f2f2f2;
     }
@@ -86,7 +212,14 @@ section {
         max-height: 300px;
         max-width: 300px
     }
-    h1 {
+    &.cta {
+        h2 {
+            font-weight: 200;
+        }
+    }
+    h1,
+    h2,
+    h3 {
         width: 100%
     }
     .btn-container {
@@ -95,6 +228,11 @@ section {
         text-align: center
     }
     @media (min-width: 768px) {
+        h1,
+        h2,
+        h3 {
+            width: auto
+        }
         text-align: left;
         img {
             margin-bottom: 0px;
