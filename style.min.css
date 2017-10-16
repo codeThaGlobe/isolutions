@@ -1,0 +1,22 @@
+@import url(bootstrap-4/css/bootstrap.min.css);@import url(bootstrap-4/css/jumbotron.css);.navbar .navbar-brand{background:transparent url(img/logo.svg) no-repeat left 10px;width:100px;height:40px}
+.breadcrumbs p{margin-top:1rem}
+.jumbotron{background:url(img/stock/584222958.jpg) center -103px no-repeat;background-size:cover;min-height:280px}
+hr{width:80%;margin-bottom:10px}
+.btn-asteric{font-size:.8em}
+footer{text-align:center;width:100%;font-size:.8em}
+.btn-container{width:100%;margin:0 auto;text-align:center}
+section{text-align:center;padding:100px 20px}
+section.odd{background-color:#f2f2f2}
+section.even{background-color:#fff}
+section img{margin-bottom:30px;max-height:300px;max-width:300px}
+section h1{width:100%}
+section .btn-container{width:100%;margin:0 auto;text-align:center}
+@media(min-width:768px){.jumbotron{background:url(img/stock/584222958.jpg) center -130px no-repeat;background-size:cover;min-height:360px}
+section{text-align:left}
+section img{margin-bottom:0}
+}@media(min-width:992px){.jumbotron{background:url(img/stock/584222958.jpg) center -190px no-repeat;background-size:cover;min-height:440px}
+}@media(min-width:1200px){.jumbotron{background:url(img/stock/584222958.jpg) center -240px no-repeat;background-size:cover;min-height:516px}
+}@media(min-width:1600px){.jumbotron{background:url(img/stock/584222958.jpg) center -346px no-repeat;background-size:cover;min-height:630px}
+}@media(min-width:2000px){.jumbotron{background:url(img/stock/584222958.jpg) center -406px no-repeat;background-size:cover;min-height:800px}
+}@media(min-width:2500px){.jumbotron{background:url(img/stock/584222958.jpg) center -550px no-repeat;background-size:cover;min-height:950px}
+}
