@@ -33,6 +33,16 @@ section.cta h2{font-weight:200}
 section h1,section h2,section h3{width:100%}
 section .btn-container{width:100%;margin:0 auto;text-align:center}
 section h2.fm_api_title br{display:none}
+section.hero{background:blue}
+section.hero>div>.row>div{border-radius:6px;background-color:white;min-height:180px;box-shadow:0 0 10px rgba(0,0,0,0.6)}
+section.hero>div>.row>div img{margin-bottom:0}
+section.hero.books{background:url(img/stock/books-587536254.jpg) center bottom no-repeat;background-size:cover}
+section.hero.books .row>div img{max-height:100px}
+section.hero.homes{background:url(img/hero-homes.png) center bottom no-repeat;background-size:cover}
+section.hero.damo{background:url(img/stock/damo-689313338.jpg) center -65px no-repeat;background-size:cover}
+section.hero.damo .row>div{box-shadow:0 0 10px rgba(113,28,19,0.6)}
+section.hero.fmapi{background:url(img/stock/fmapi-491277738.jpg) center center no-repeat;background-size:cover}
+section.hero.fmapi .row>div{box-shadow:0 0 10px rgba(113,28,19,0.6)}
 @media(min-width:768px){h1,h2,h3,h4{text-align:left}
 .cta h2,.cta p,h2.main-title,.cta h3{width:100%;text-align:center}
 .jumbotron{background:url(img/stock/584222958.jpg) center -130px no-repeat;background-size:cover;min-height:360px}

@@ -25,6 +25,10 @@
 
 
 
+
+
+
+
 /** Display Ultra Light */
 
 @font-face {
@@ -32,6 +36,10 @@
     font-weight: 100;
     src: url("fonts/sanfranciscodisplay-ultralight-webfont.woff2");
 }
+
+
+
+
 
 
 
@@ -59,6 +67,10 @@
 
 
 
+
+
+
+
 /** Display Medium */
 
 @font-face {
@@ -76,6 +88,10 @@
 
 
 
+
+
+
+
 /** Display Semi Bold */
 
 @font-face {
@@ -83,6 +99,10 @@
     font-weight: 500;
     src: url("fonts/sanfranciscodisplay-semibold-webfont.woff2");
 }
+
+
+
+
 
 
 
@@ -310,6 +330,45 @@ section {
         h2.fm_api_title {
             br {
                 display: block
+            }
+        }
+    }
+    &.hero {
+        background: blue;
+        &>div>.row>div {
+            border-radius: 6px;
+            background-color: white;
+            min-height: 180px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            img {
+                margin-bottom: 0;
+            }
+        }
+        &.books {
+            background: url(img/stock/books-587536254.jpg) center bottom no-repeat;
+            background-size: cover;
+            .row>div {
+                img{
+                	max-height: 100px;
+                }
+            }
+        }
+        &.homes {
+            background: url(img/hero-homes.png) center bottom no-repeat;
+            background-size: cover;
+        }
+        &.damo {
+            background: url(img/stock/damo-689313338.jpg) center -65px no-repeat;
+            background-size: cover;
+            .row>div {
+                box-shadow: 0 0 10px rgba(113, 28, 19, 0.6);
+            }
+        }
+        &.fmapi {
+            background: url(img/stock/fmapi-491277738.jpg) center center no-repeat;
+            background-size: cover;
+            .row>div {
+                box-shadow: 0 0 10px rgba(113, 28, 19, 0.6);
             }
         }
     }
