@@ -6,31 +6,40 @@
 @font-face{font-family:"San Francisco";font-weight:500;src:url("fonts/sanfranciscodisplay-semibold-webfont.woff2")}
 @font-face{font-family:"San Francisco";font-weight:bold;src:url("fonts/sanfranciscodisplay-bold-webfont.woff2")}
 body{font-family:"sf-pro-text_regular",Roboto,"Helvetica Neue",Arial,sans-serif}
-a{color:#f4a62c}
+a{color:#0070c9}
+p{color:#888}
+.btn-primary{background-color:#0070c9}
 h1,h2,h3,h4{font-family:"San Francisco",Roboto,"Helvetica Neue",Arial,sans-serif;text-align:center}
 h1{font-weight:bold;font-size:4rem;letter-spacing:-0.03em}
 h2{font-weight:500;font-size:3rem}
-h3{font-weight:normal;font-size:1.5rem}
+h3{font-weight:normal;font-size:1.5rem;color:#888}
+.cta h3{color:#000}
 .navbar .navbar-brand{background:transparent url(img/logo.svg) no-repeat left 10px;width:100px;height:40px}
-.breadcrumbs p{margin-top:1rem}
-.jumbotron{border-radius:0;background:url(img/stock/584222958.jpg) center -103px no-repeat;background-size:cover;min-height:280px;margin-bottom:60px}
+.breadcrumbs{height:48px;padding-top:10px;vertical-align:middle;position:fixed;width:100%;z-index:1000;background-color:white;box-shadow:0 -3px 14px #666}
+.breadcrumbs span{display:inline-block;margin-top:.25rem}
+.breadcrumbs .btn-sm{padding:.2rem .5rem}
+.jumbotron{border-radius:0;background:url(img/stock/584222958.jpg) center -65px no-repeat;background-size:cover;min-height:280px;margin-bottom:60px}
 hr{width:80%;margin-bottom:10px}
 .btn-asteric{font-size:.8em}
 footer{text-align:center;width:100%;font-size:.8em}
 .btn-container{width:100%;margin:0 auto;text-align:center}
 section{text-align:center;padding:100px 20px}
 section.first{margin-top:100px}
-section.odd{background-color:#f2f2f2}
+section.odd{background-color:#fafafa}
 section.even{background-color:#fff}
 section img{margin-bottom:30px;max-height:300px;max-width:300px}
+section h2.main-title{font-weight:200}
 section.cta h2{font-weight:200}
 section h1,section h2,section h3{width:100%}
 section .btn-container{width:100%;margin:0 auto;text-align:center}
+section h2.fm_api_title br{display:none}
 @media(min-width:768px){h1,h2,h3,h4{text-align:left}
+.cta h2,.cta p,h2.main-title,.cta h3{width:100%;text-align:center}
 .jumbotron{background:url(img/stock/584222958.jpg) center -130px no-repeat;background-size:cover;min-height:360px}
 section{text-align:left}
 section h1,section h2,section h3{width:auto}
 section img{margin-bottom:0}
+section h2.fm_api_title br{display:block}
 }@media(min-width:992px){.jumbotron{background:url(img/stock/584222958.jpg) center -190px no-repeat;background-size:cover;min-height:440px}
 }@media(min-width:1200px){.jumbotron{background:url(img/stock/584222958.jpg) center -240px no-repeat;background-size:cover;min-height:516px}
 }@media(min-width:1600px){.jumbotron{background:url(img/stock/584222958.jpg) center -346px no-repeat;background-size:cover;min-height:630px}

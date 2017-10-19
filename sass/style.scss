@@ -20,6 +20,11 @@
 
 
 
+
+
+
+
+
 /** Display Ultra Light */
 
 @font-face {
@@ -27,6 +32,11 @@
     font-weight: 100;
     src: url("fonts/sanfranciscodisplay-ultralight-webfont.woff2");
 }
+
+
+
+
+
 
 
 
@@ -44,6 +54,11 @@
 
 
 
+
+
+
+
+
 /** Display Medium */
 
 @font-face {
@@ -56,6 +71,11 @@
 
 
 
+
+
+
+
+
 /** Display Semi Bold */
 
 @font-face {
@@ -63,6 +83,11 @@
     font-weight: 500;
     src: url("fonts/sanfranciscodisplay-semibold-webfont.woff2");
 }
+
+
+
+
+
 
 
 
@@ -81,10 +106,18 @@
 body {
     font-family: "sf-pro-text_regular", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-a{
-	color:rgb(244, 166, 44);
+
+a {
+    color: #0070c9;
 }
 
+p {
+    color: #888888;
+}
+
+.btn-primary {
+    background-color: #0070c9;
+}
 
 h1,
 h2,
@@ -109,6 +142,11 @@ h2 {
 h3 {
     font-weight: normal;
     font-size: 1.5rem;
+    color: #888888;
+}
+
+.cta h3 {
+    color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -118,6 +156,13 @@ h3 {
     h4 {
 
         text-align: left;
+    }
+    .cta h2,
+    .cta p,
+    h2.main-title,
+    .cta h3 {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -131,13 +176,29 @@ h3 {
 }
 
 
-.breadcrumbs p {
-    margin-top: 1rem;
+.breadcrumbs {
+    height: 48px;
+    padding-top: 10px;
+    vertical-align: middle;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 -3px 14px #666;
+    span {
+        display: inline-block;
+        margin-top: 0.25rem;
+    }
+    /* a.btn{ float: right;} */
+    .btn-sm {
+        padding: .2rem .5rem;
+    }
 }
+
 
 .jumbotron {
     border-radius: 0;
-    background: url(img/stock/584222958.jpg) center -103px no-repeat;
+    background: url(img/stock/584222958.jpg) center -65px no-repeat;
     background-size: cover;
     min-height: 280px;
     margin-bottom: 60px;
@@ -198,11 +259,12 @@ section {
 
     text-align: center;
     padding: 100px 20px;
+
     &.first {
         margin-top: 100px;
     }
     &.odd {
-        background-color: #f2f2f2;
+        background-color: #fafafa;
     }
     &.even {
         background-color: #ffffff;
@@ -211,6 +273,9 @@ section {
         margin-bottom: 30px;
         max-height: 300px;
         max-width: 300px
+    }
+    h2.main-title {
+        font-weight: 200;
     }
     &.cta {
         h2 {
@@ -227,6 +292,11 @@ section {
         margin: 0 auto;
         text-align: center
     }
+    h2.fm_api_title {
+        br {
+            display: none
+        }
+    }
     @media (min-width: 768px) {
         h1,
         h2,
@@ -236,6 +306,11 @@ section {
         text-align: left;
         img {
             margin-bottom: 0px;
+        }
+        h2.fm_api_title {
+            br {
+                display: block
+            }
         }
     }
 }
