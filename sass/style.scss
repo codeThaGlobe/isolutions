@@ -17,41 +17,14 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/** Display Ultra Light */
-
+//Display Ultra Light
 @font-face {
     font-family: "San Francisco";
     font-weight: 100;
     src: url("fonts/sanfranciscodisplay-ultralight-webfont.woff2");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/** Display Thin */
-
+// Display Thin
 @font-face {
     font-family: "San Francisco";
     font-weight: 200;
@@ -59,62 +32,21 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/** Display Medium */
-
+// Display Medium */
 @font-face {
     font-family: "San Francisco";
     font-weight: normal;
     src: url("fonts/sanfranciscodisplay-medium-webfont.woff2");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/** Display Semi Bold */
-
+// Display Semi Bold */
 @font-face {
     font-family: "San Francisco";
     font-weight: 500;
     src: url("fonts/sanfranciscodisplay-semibold-webfont.woff2");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/** Display Bold */
-
+// Display Bold */
 @font-face {
     font-family: "San Francisco";
     font-weight: bold;
@@ -143,7 +75,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "San Francisco", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "sf-pro-text_medium", Roboto, "Helvetica Neue", Arial, sans-serif;
     text-align: center;
 }
 
@@ -156,17 +88,21 @@ h1 {
 
 h2 {
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h3 {
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #888888;
 }
 
 .cta h3 {
     color: #000000;
+}
+
+.main-title+h3 {
+    color: #888888;
 }
 
 @media (min-width: 768px) {
@@ -212,45 +148,52 @@ h3 {
     /* a.btn{ float: right;} */
     .btn-sm {
         padding: .2rem .5rem;
+        margin-right: 8px;
+        @media (min-width: 992px) {
+        	margin-right: 24px;
+        }
+        @media (min-width: 1200px) {
+        	margin-right: 38px;
+        }
     }
 }
 
 
 .jumbotron {
     border-radius: 0;
-    background: url(img/stock/584222958.jpg) center -65px no-repeat;
+    background: url(img/hero-main.png) center bottom no-repeat;
     background-size: cover;
-    min-height: 280px;
+    min-height: 320px;
     margin-bottom: 60px;
     @media (min-width: 768px) {
-        background: url(img/stock/584222958.jpg) center -130px no-repeat;
+        background: url(img/hero-main.png) center bottom no-repeat;
         background-size: cover;
         min-height: 360px;
     }
     @media (min-width: 992px) {
-        background: url(img/stock/584222958.jpg) center -190px no-repeat;
+        background: url(img/hero-main.png) center bottom no-repeat;
         background-size: cover;
         min-height: 440px;
     }
     @media (min-width: 1200px) {
-        background: url(img/stock/584222958.jpg) center -240px no-repeat;
+        background: url(img/hero-main-lg.png) center bottom no-repeat;
         background-size: cover;
-        min-height: 516px;
+        min-height: 400px;
     }
     @media (min-width: 1600px) {
-        background: url(img/stock/584222958.jpg) center -346px no-repeat;
+        background: url(img/hero-main-lg.png) center bottom no-repeat;
         background-size: cover;
-        min-height: 630px;
+        min-height: 576px;
     }
     @media (min-width: 2000px) {
-        background: url(img/stock/584222958.jpg) center -406px no-repeat;
+        background: url(img/hero-main-lg.png) center bottom no-repeat;
         background-size: cover;
-        min-height: 800px;
+        min-height: 716px;
     }
     @media (min-width: 2500px) {
-        background: url(img/stock/584222958.jpg) center -550px no-repeat;
+        background: url(img/hero-main-lg.png) center bottom no-repeat;
         background-size: cover;
-        min-height: 950px;
+        min-height: 786px;
     }
 }
 
@@ -282,6 +225,7 @@ section {
 
     &.first {
         margin-top: 100px;
+        padding: 60px 20px !important
     }
     &.odd {
         background-color: #fafafa;
@@ -293,6 +237,9 @@ section {
         margin-bottom: 30px;
         max-height: 300px;
         max-width: 300px
+    }
+    .img-fluid {
+        max-width: 80%;
     }
     h2.main-title {
         font-weight: 200;
@@ -338,27 +285,31 @@ section {
         &>div>.row>div {
             border-radius: 6px;
             background-color: white;
-            min-height: 180px;
+            min-height: 120px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
             img {
                 margin-bottom: 0;
             }
+            @media (min-width: 768px){
+            	min-height: 180px;
+            }
         }
+
         &.books {
-            background: url(img/stock/books-587536254.jpg) center bottom no-repeat;
+            background: url(img/stock/books-587536254.jpg) center -10px no-repeat;
             background-size: cover;
             .row>div {
-                img{
-                	max-height: 100px;
+                img {
+                    max-height: 100px;
                 }
             }
         }
         &.homes {
-            background: url(img/hero-homes.png) center bottom no-repeat;
+            background: url(./img/stock/homes-825271528.jpg) center bottom no-repeat;
             background-size: cover;
         }
         &.damo {
-            background: url(img/stock/damo-689313338.jpg) center -65px no-repeat;
+            background: url(img/stock/damo-689313338.jpg) center bottom no-repeat;
             background-size: cover;
             .row>div {
                 box-shadow: 0 0 10px rgba(113, 28, 19, 0.6);
@@ -372,4 +323,11 @@ section {
             }
         }
     }
+}
+
+.v2 section:not(.hero)
+/* style */
+
+{
+    padding: 150px 20px;
 }
