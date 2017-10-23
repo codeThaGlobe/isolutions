@@ -145,15 +145,24 @@ h3 {
         display: inline-block;
         margin-top: 0.25rem;
     }
-    /* a.btn{ float: right;} */
+
+    @media (min-width: 576px) and (max-width: 767px) {
+        .col-sm-12 {
+            padding: 0;
+        }
+    }
+
     .btn-sm {
         padding: .2rem .5rem;
-        margin-right: 8px;
+
+        @media (min-width: 576px) {
+            margin-right: 0;
+        }
         @media (min-width: 992px) {
-        	margin-right: 24px;
+            margin-right: 24px;
         }
         @media (min-width: 1200px) {
-        	margin-right: 38px;
+            margin-right: 38px;
         }
     }
 }
@@ -161,37 +170,37 @@ h3 {
 
 .jumbotron {
     border-radius: 0;
-    background: url(img/hero-main.png) center bottom no-repeat;
+    background: url(./img/hero-jumbotron.png) center bottom no-repeat;
     background-size: cover;
     min-height: 320px;
     margin-bottom: 60px;
     @media (min-width: 768px) {
-        background: url(img/hero-main.png) center bottom no-repeat;
+        background: url(img/hero-jumbotron.png) center bottom no-repeat;
         background-size: cover;
         min-height: 360px;
     }
     @media (min-width: 992px) {
-        background: url(img/hero-main.png) center bottom no-repeat;
+        background: url(img/hero-jumbotron.png) center bottom no-repeat;
         background-size: cover;
         min-height: 440px;
     }
     @media (min-width: 1200px) {
-        background: url(img/hero-main-lg.png) center bottom no-repeat;
+        background: url(img/hero-jumbotron-lg.png) center bottom no-repeat;
         background-size: cover;
         min-height: 400px;
     }
     @media (min-width: 1600px) {
-        background: url(img/hero-main-lg.png) center bottom no-repeat;
+        background: url(img/hero-jumbotron-lg.png) center bottom no-repeat;
         background-size: cover;
         min-height: 576px;
     }
     @media (min-width: 2000px) {
-        background: url(img/hero-main-lg.png) center bottom no-repeat;
+        background: url(img/hero-jumbotron-lg.png) center bottom no-repeat;
         background-size: cover;
         min-height: 716px;
     }
     @media (min-width: 2500px) {
-        background: url(img/hero-main-lg.png) center bottom no-repeat;
+        background: url(img/hero-jumbotron-lg.png) center bottom no-repeat;
         background-size: cover;
         min-height: 786px;
     }
@@ -224,14 +233,28 @@ section {
     padding: 100px 20px;
 
     &.first {
-        margin-top: 100px;
-        padding: 60px 20px !important
+        margin-top: 40px;
+        padding: 60px 20px !important;
+        @media (min-width: 768px) {
+            margin-top: 100px;
+        }
     }
     &.odd {
-        background-color: #fafafa;
+        background-color: #f2f2f2;
     }
     &.even {
         background-color: #ffffff;
+    }
+    &.books {
+
+        padding: 40px !important;
+        background-color: #333333;
+        .btn-asteric {
+            margin: 0;
+        }
+        h3 {
+            color: white !important;
+        }
     }
     img {
         margin-bottom: 30px;
@@ -264,6 +287,7 @@ section {
             display: none
         }
     }
+
     @media (min-width: 768px) {
         h1,
         h2,
@@ -290,33 +314,52 @@ section {
             img {
                 margin-bottom: 0;
             }
-            @media (min-width: 768px){
-            	min-height: 180px;
+            @media (min-width: 768px) {
+                min-height: 180px;
             }
         }
 
         &.books {
-            background: url(img/stock/books-587536254.jpg) center -10px no-repeat;
+            background: url(./img/hero-books.png) center -10px no-repeat;
             background-size: cover;
+            @media (min-width: 992px) {
+                background-position: center -100px;
+            }
+            @media (min-width: 1200px) {
+                background-position: center -150px;
+            }
+            @media (min-width: 1600px) {
+                background-position: center -200px;
+                /* height: 300px; */
+            }
+            @media (min-width: 2000px) {
+                background-position: center -300px;
+                /* height: 300px; */
+            }
+            @media (min-width: 2500px) {
+                background-position: center -400px;
+                /* height: 300px; */
+            }
             .row>div {
                 img {
                     max-height: 100px;
                 }
             }
         }
-        &.homes {
-            background: url(./img/stock/homes-825271528.jpg) center bottom no-repeat;
-            background-size: cover;
-        }
         &.damo {
-            background: url(img/stock/damo-689313338.jpg) center bottom no-repeat;
+            background: url(./img/hero-damo.png) center bottom no-repeat;
             background-size: cover;
             .row>div {
                 box-shadow: 0 0 10px rgba(113, 28, 19, 0.6);
             }
         }
+        &.homes {
+            background: url(./img/hero-homes.png) center bottom no-repeat;
+            background-size: cover;
+        }
+
         &.fmapi {
-            background: url(img/stock/fmapi-491277738.jpg) center center no-repeat;
+            background: url(./img/hero-fmapi.png) center center no-repeat;
             background-size: cover;
             .row>div {
                 box-shadow: 0 0 10px rgba(113, 28, 19, 0.6);
