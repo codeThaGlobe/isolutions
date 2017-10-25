@@ -172,8 +172,19 @@ h3 {
     border-radius: 0;
     background: url(./img/hero-jumbotron.png) center bottom no-repeat;
     background-size: cover;
-    min-height: 320px;
+    min-height: 200px;
     margin-bottom: 60px;
+    /* Landscape */
+    @media screen and (orientation: landscape) {
+        /* Landscape styles */
+        min-height: 320px;
+    }
+    @media (min-width: 504px) {
+    	       min-height: 250px;
+    }
+    @media (min-width: 576px) {
+    	       min-height: 300px;
+    }
     @media (min-width: 768px) {
         background: url(img/hero-jumbotron.png) center bottom no-repeat;
         background-size: cover;
