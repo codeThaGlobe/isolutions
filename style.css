@@ -98,11 +98,31 @@ section.books .btn-asteric { margin: 0; }
 
 section.books h3 { color: white !important; }
 
+section.books h2 { color: white !important; }
+
+section.live-events {   padding: 40px !important; background-color: #333333; color: white; }
+
+section.live-events	.btn-outline-light:hover {   color: #fff; background-color: #0D70CA; }
+
+section.live-events .list-group {  width: 90%;}
+
+section.live-events .list-group .list-group-item{  border: none !important; background-color: #333333; }
+
+section.live-events .btn-asteric { margin: 0; }
+
+section.live-events h3 { color: white !important; }
+
+section.live-events h2 { color: white !important; }
+
+section.live-events .list-group {  width: 80%;}
+
 section img { margin-bottom: 30px; max-height: 300px; max-width: 300px; }
 
 section .img-fluid { max-width: 80%; }
 
 section h2.main-title { font-weight: 200; }
+
+section.webinar { padding: 40px !important; }
 
 section.cta h2 { font-weight: 200; }
 
@@ -140,6 +160,8 @@ section.hero.books { background: url(./img/hero-books.png) center -10px no-repea
 section.hero.books .row > div img { max-height: 100px; }
 
 section.hero.damo { background: url(./img/hero-damo.png) center bottom no-repeat; background-size: cover; }
+
+section.webinar.video .row > div { box-shadow: 0 0 10px rgba(113, 28, 19, 0.6); }
 
 section.hero.damo .row > div { box-shadow: 0 0 10px rgba(113, 28, 19, 0.6); }
 
