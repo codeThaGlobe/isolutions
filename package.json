@@ -1,13 +1,15 @@
 {
-  "name": "WPGulp",
+  "name": "api-webinar-page",
   "author": "ahmadawais",
-  "version": "1.0.3",
+  "version": "0.0.1",
   "license": "GPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ahmadawais/WPGulp"
+    "url": "git+https://github.com/ahmadawais/WPGulp.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "simple-react-form": "^2.0.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
@@ -28,5 +30,14 @@
     "gulp-eslint": "^0.13.2",
     "gulp-load-plugins": "^0.10.0",
     "gulp-babel": "^5.2.1"
+  },
+  "description": "##Landing pages template",
+  "bugs": {
+    "url": "https://github.com/ahmadawais/WPGulp/issues"
+  },
+  "homepage": "https://github.com/ahmadawais/WPGulp#readme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
