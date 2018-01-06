@@ -104,7 +104,7 @@ section.live-events {   padding: 40px !important; background-color: #333333; col
 
 section.live-events	.btn-outline-light:hover {   color: #fff; background-color: #0D70CA; }
 
-section.live-events .list-group {  width: 80%;}
+section.live-events .list-group {  width: 90%;}
 
 section.live-events .list-group .list-group-item{  border: none !important; background-color: #333333; }
 
