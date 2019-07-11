@@ -55,6 +55,7 @@ section.hero.books .row>div img{max-height:100px}
 section.hero.damo{background:url(./img/hero-damo.png) center bottom no-repeat;background-size:cover}
 section.hero.damo .row>div{box-shadow:0 0 10px rgba(113,28,19,0.6)}
 section.hero.homes{background:url(./img/hero-homes.png) center bottom no-repeat;background-size:cover}
+section.hero.weather{background:url(./img/hero-weather.png) center bottom no-repeat;background-size:cover}
 section.hero.fmapi{background:url(./img/hero-fmapi.png) center center no-repeat;background-size:cover}
 section.hero.fmapi .row>div{box-shadow:0 0 10px rgba(113,28,19,0.6)}
 .v2 section:not(.hero){padding:150px 20px}

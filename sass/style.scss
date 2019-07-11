@@ -457,6 +457,11 @@ section {
             background-size: cover;
         }
 
+        &.weather {
+            background: url(./img/hero-weather.png) center bottom no-repeat;
+            background-size: cover;
+        }
+
         &.fmapi {
             background: url(./img/hero-fmapi.png) center center no-repeat;
             background-size: cover;
