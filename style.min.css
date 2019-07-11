@@ -9,6 +9,8 @@ body{font-family:"sf-pro-text_regular",Roboto,"Helvetica Neue",Arial,sans-serif}
 a{color:#0070c9}
 p{color:#888}
 .btn-primary{background-color:#0070c9}
+.bg-brand-orange{background-color:#f4a62c}
+.brand-orange{color:#f4a62c}
 h1,h2,h3,h4{font-family:"sf-pro-text_medium",Roboto,"Helvetica Neue",Arial,sans-serif;text-align:center}
 h1{font-weight:bold;font-size:4rem;letter-spacing:-0.03em}
 h2{font-weight:500;font-size:2.5rem}
@@ -31,10 +33,9 @@ section.even{background-color:#fff}
 section.books{padding:40px !important;background-color:#333}
 section.books .btn-asteric{margin:0}
 section.books h2,section.books h3{color:white !important}
-section.live-events{padding:40px !important;background-color:#333;color:white}
+section.live-events{background-color:#333;color:white}
 section.live-events .btn-outline-light:hover{color:#fff;background-color:#0d70ca}
-section.live-events .list-group{width:90%}
-section.live-events .list-group .list-group-item{border:none !important;background-color:#333}
+section.live-events .wrap-date{border:#fff 1px solid;border-radius:6px;padding:16px}
 section.live-events.btn-asteric{margin:0}
 section.live-events h3{color:white !important}
 section.live-events h2{color:white !important}

@@ -71,6 +71,15 @@ p {
     background-color: #0070c9;
 }
 
+.bg-brand-orange {
+    background-color: #f4a62c;
+}
+
+.brand-orange {
+    /*color: $bd-brand-orange !important;*/
+    color: #f4a62c;
+}
+
 h1,
 h2,
 h3,
@@ -290,7 +299,6 @@ section {
     }
 
     &.live-events {
-        padding: 40px !important;
         background-color: #333333;
         color: white;
 
@@ -299,13 +307,12 @@ section {
             background-color: #0D70CA;
         }
 
-        .list-group {
-            width: 90%;
-        }
+        .wrap-date {
+            border: #fff 1px solid;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            padding: 16px;
 
-        .list-group .list-group-item {
-            border: none !important;
-            background-color: #333333;
         }
 
         &.btn-asteric {
