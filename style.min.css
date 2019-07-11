@@ -30,7 +30,15 @@ section.odd{background-color:#f2f2f2}
 section.even{background-color:#fff}
 section.books{padding:40px !important;background-color:#333}
 section.books .btn-asteric{margin:0}
-section.books h3{color:white !important}
+section.books h2,section.books h3{color:white !important}
+section.live-events{padding:40px !important;background-color:#333;color:white}
+section.live-events .btn-outline-light:hover{color:#fff;background-color:#0d70ca}
+section.live-events .list-group{width:90%}
+section.live-events .list-group .list-group-item{border:none !important;background-color:#333}
+section.live-events.btn-asteric{margin:0}
+section.live-events h3{color:white !important}
+section.live-events h2{color:white !important}
+section.live-events.list-group{width:80%}
 section img{margin-bottom:30px;max-height:300px;max-width:300px}
 section .img-fluid{max-width:80%}
 section h2.main-title{font-weight:200}
