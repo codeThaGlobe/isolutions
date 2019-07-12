@@ -75,6 +75,7 @@ section.live-events img.kangaroo{height:100px;width:auto;margin-top:-16px}
 .cta h2,.cta p,h2.main-title,.cta h3{width:100%;text-align:center}
 .jumbotron{background:url(img/hero-jumbotron.png) center bottom no-repeat;background-size:cover;min-height:360px}
 section.first{margin-top:100px}
+section.misc .has-border{padding:20px}
 section{text-align:left}
 section h1,section h2,section h3{width:auto}
 section img{margin-bottom:0}
