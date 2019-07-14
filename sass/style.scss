@@ -506,6 +506,14 @@ section {
         &.weather {
             background: url(./img/hero-weather.png) center bottom no-repeat;
             background-size: cover;
+
+            img {
+                width: 80%;
+
+                @media(min-width: 1024px) {
+                    width: 60%;
+                }
+            }
         }
 
         &.fmapi {

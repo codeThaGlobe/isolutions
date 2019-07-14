@@ -62,6 +62,7 @@ section.hero.damo{background:url(./img/hero-damo.png) center bottom no-repeat;ba
 section.hero.damo .row>div{box-shadow:0 0 10px rgba(113,28,19,0.6)}
 section.hero.homes{background:url(./img/hero-homes.png) center bottom no-repeat;background-size:cover}
 section.hero.weather{background:url(./img/hero-weather.png) center bottom no-repeat;background-size:cover}
+section.hero.weather img{width:80%}
 section.hero.fmapi{background:url(./img/hero-fmapi.png) center center no-repeat;background-size:cover}
 section.hero.fmapi .row>div{box-shadow:0 0 10px rgba(113,28,19,0.6)}
 .v2 section:not(.hero){padding:150px 20px}
@@ -84,6 +85,7 @@ section.hero>div>.row>div{min-height:180px}
 }@media(min-width:992px){.breadcrumbs .btn-sm{margin-right:24px}
 .jumbotron{background:url(img/hero-jumbotron.png) center bottom no-repeat;background-size:cover;min-height:440px}
 section.hero.books{background-position:center -100px}
+}@media(min-width:1024px){section.hero.weather img{width:60%}
 }@media(min-width:1200px){.breadcrumbs .btn-sm{margin-right:38px}
 .jumbotron{background:url(img/hero-jumbotron-lg.png) center bottom no-repeat;background-size:cover;min-height:400px}
 section.hero.books{background-position:center -150px}
