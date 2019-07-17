@@ -322,6 +322,74 @@ section {
             -webkit-border-radius: 6px;
             border-radius: 6px;
             padding: 16px;
+        }
+
+
+        .btn[aria-expanded="true"] {
+            background: #f4a62c;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .collapse,
+        .collapsing,
+        .show {
+            .card-title {
+                color: #333333;
+            }
+        }
+
+        //Hack to delay the visibility of collapse elements so the
+        //exiting ones have time to be removed from DOM
+        //Works with JS at bottom of index file
+        .collapsing {
+            -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+            visibility: hidden;
+        }
+
+        .event-details {
+            color: #333333;
+            text-align: left;
+
+
+
+            @media(min-width: 768px) {
+                text-align: center;
+            }
+
+            padding-top: 20px;
+
+            .card {
+                border: 1px solid #fff !important;
+
+                @media(min-width: 768px) {
+                    padding: 30px;
+                }
+
+                h2 {
+                    color: #333333 !important;
+                }
+            }
+
+            .arrow {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 16px 20px 16px;
+                border-color: transparent transparent #ffffff transparent;
+                border-style: inset;
+                -webkit-transform: rotate(360deg);
+
+            }
+
+            &.first .arrow {
+                margin-left: 12%;
+            }
+
+            &.second .arrow {
+                margin-left: 80%;
+            }
 
         }
 

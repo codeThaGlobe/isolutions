@@ -37,6 +37,15 @@ section.live-events{background-color:#333;color:white}
 section.live-events .btn-outline-light:hover{color:#fff;background-color:#0d70ca}
 section.live-events img.kangaroo{width:50%;margin-top:30px}
 section.live-events .wrap-date{border:#fff 1px solid;border-radius:6px;padding:16px}
+section.live-events .btn[aria-expanded="true"]{background:#f4a62c;box-shadow:none}
+section.live-events .collapse .card-title,section.live-events .collapsing .card-title,section.live-events .show .card-title{color:#333}
+section.live-events .collapsing{-webkit-transition-delay:.2s;transition-delay:.2s;visibility:hidden}
+section.live-events .event-details{color:#333;text-align:left;padding-top:20px}
+section.live-events .event-details .card{border:1px solid #fff !important}
+section.live-events .event-details .card h2{color:#333 !important}
+section.live-events .event-details .arrow{width:0;height:0;border-style:solid;border-width:0 16px 20px 16px;border-color:transparent transparent #fff transparent;border-style:inset;-webkit-transform:rotate(360deg)}
+section.live-events .event-details.first .arrow{margin-left:12%}
+section.live-events .event-details.second .arrow{margin-left:80%}
 section.live-events.btn-asteric{margin:0}
 section.live-events h3{color:white !important}
 section.live-events h2{color:white !important}
@@ -76,6 +85,8 @@ section.live-events img.kangaroo{height:100px;width:auto;margin-top:-16px}
 .cta h2,.cta p,h2.main-title,.cta h3{width:100%;text-align:center}
 .jumbotron{background:url(img/hero-jumbotron.png) center bottom no-repeat;background-size:cover;min-height:360px}
 section.first{margin-top:100px}
+section.live-events .event-details{text-align:center}
+section.live-events .event-details .card{padding:30px}
 section.misc .has-border{padding:20px}
 section{text-align:left}
 section h1,section h2,section h3{width:auto}

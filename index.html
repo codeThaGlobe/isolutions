@@ -79,23 +79,49 @@
                 </div>
             </div>
             <div class="row mt-5 justify-content-center">
-                <div class="col-6 col-lg-4 mb-5 mb-sm-0">
-                    <div class="wrap-date">
+                <div class="col-6 col-lg-4">
+                    <a class="btn wrap-date w-100 text-white" data-toggle="collapse" href="#details-1" role="button" aria-expanded="true" aria-controls="details-1">
                         <h1 class="text-center">08</h1>
                         <h3 class="">2019</h3>
-                    </div>
+                    </a>
                     <!-- <div class="text-center">
                         <button class="btn btn-outline-light" data-toggle="modal" data-target="#newYorkModal">Sign up</button>
                     </div> -->
                 </div>
                 <div class="col-6 col-lg-4">
-                    <div class="wrap-date">
+                    <a class="btn wrap-date w-100 text-white" data-toggle="collapse" href="#details-2" role="button" aria-expanded="false" aria-controls="details-2">
                         <h1 class="text-center">10</h1>
-                        <h3>2019</h3>
-                    </div>
+                        <h3 class="">2019</h3>
+                    </a>
                     <!-- <div class="text-center">
                         <button class="btn btn-outline-light" data-toggle="modal" data-target="#portlandModal">Sign up</button>
                     </div> -->
+                </div>
+                <div class="col-sm-8 col-lg-5 collapse show event-details first text-center" id="details-1">
+                    <div class="arrow"></div>
+                    <div class="card card-body">
+                        <h2>FileMaker</h2>
+                        <h5 class="card-title">Developer Conference 2019</h5>
+                        <p class="card-text">August 6, 2019</p>
+                        <h6 class="card-title">Session Topic:</h6>
+                        <p class="card-text">FileMaker and APIs:<br />Real-World Examples</p>
+                        <div class="col-12 px-0 mt-3">
+                            <a href="#" class="btn btn-primary btn-lg ">See Details &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-lg-5 collapse event-details second text-center" id="details-2">
+                    <div class="arrow"></div>
+                    <div class="card card-body">
+                        <h2>FileMaker</h2>
+                        <h5 class="card-title">APAC DevCon 2019</h5>
+                        <p class="card-text">october 31, 2019</p>
+                        <!-- <h6 class="card-title">Session Topic:</h6>
+<p class="card-text">FileMaker and APIs:<br />Real-World Examples</p> -->
+                        <div class="col-12 px-0 mt-3">
+                            <a href="https://community.filemaker.com/en/s/question/0D50H00006yPYEaSAO/can-you-provide-more-details-about-2019-devcon" class="btn btn-primary btn-lg ">See Details &raquo;</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -486,31 +512,10 @@
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script>
-    function submitForm(formId) {
-        var formData = $("#" + formId).serializeArray()
-        var data = {}
-        data.email = formData[1].value
-        data.name = formData[0].value
-        if (formId === 'portlandForm') {
-            data.location = 'Portland'
-        } else if (formId === 'losAngelesForm') {
-            data.location = 'Los Angeles'
-        } else if (formId === 'newYorkForm') {
-            data.location = 'New York'
-        } else if (formId === 'milwaukeeForm') {
-            data.location = 'Milwaukee'
-        }
-        var stringData = JSON.stringify(data)
-
-        $.ajax({
-            type: "POST",
-            url: "https://itools.isolutions.fm/rsvp/create.php",
-            data: stringData,
-            contentType: 'application/json',
-            dataType: 'json',
-            success: function(data) {}
-        });
-    }
+    var $myGroup = $('.live-events');
+    $myGroup.on('show.bs.collapse', '.collapse', function() {
+        $myGroup.find('.collapse.show').collapse('hide');
+    });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5919506-5"></script>
