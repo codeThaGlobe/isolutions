@@ -200,7 +200,7 @@ section.hero.damo .row > div { box-shadow: 0 0 10px rgba(113, 28, 19, 0.6); }
 
 section.hero.homes { background: url(./img/hero-homes.png) center bottom no-repeat; background-size: cover; }
 
-section.hero.weather { background: url(./img/hero-weather.png) center bottom no-repeat; background-size: cover; }
+section.hero.weather { background: url(./img/hero-weather.jpg) center bottom no-repeat; background-size: cover; }
 
 section.hero.weather img { width: 80%; }
 
