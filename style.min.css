@@ -65,14 +65,14 @@ section h2.fm_api_title br{display:none}
 section.hero{background:blue}
 section.hero>div>.row>div{border-radius:6px;background-color:white;min-height:120px;box-shadow:0 0 10px rgba(0,0,0,0.6)}
 section.hero>div>.row>div img{margin-bottom:0}
-section.hero.books{background:url(./img/hero-books.png) center -10px no-repeat;background-size:cover}
+section.hero.books{background:url(./img/hero-books.jpg) center -10px no-repeat;background-size:cover}
 section.hero.books .row>div img{max-height:100px}
-section.hero.damo{background:url(./img/hero-damo.png) center bottom no-repeat;background-size:cover}
+section.hero.damo{background:url(./img/hero-damo.jpg) center bottom no-repeat;background-size:cover}
 section.hero.damo .row>div{box-shadow:0 0 10px rgba(113,28,19,0.6)}
-section.hero.homes{background:url(./img/hero-homes.png) center bottom no-repeat;background-size:cover}
+section.hero.homes{background:url(./img/hero-homes.jpg) center bottom no-repeat;background-size:cover}
 section.hero.weather{background:url(./img/hero-weather.jpg) center bottom no-repeat;background-size:cover}
 section.hero.weather img{width:80%}
-section.hero.fmapi{background:url(./img/hero-fmapi.png) center center no-repeat;background-size:cover}
+section.hero.fmapi{background:url(./img/hero-fmapi.jpg) center center no-repeat;background-size:cover}
 section.hero.fmapi .row>div{box-shadow:0 0 10px rgba(113,28,19,0.6)}
 .v2 section:not(.hero){padding:150px 20px}
 @media screen and (orientation:landscape){.jumbotron{min-height:320px}

@@ -524,7 +524,7 @@ section {
         }
 
         &.books {
-            background: url(./img/hero-books.png) center -10px no-repeat;
+            background: url(./img/hero-books.jpg) center -10px no-repeat;
             background-size: cover;
 
             @media (min-width: 992px) {
@@ -558,7 +558,7 @@ section {
         }
 
         &.damo {
-            background: url(./img/hero-damo.png) center bottom no-repeat;
+            background: url(./img/hero-damo.jpg) center bottom no-repeat;
             background-size: cover;
 
             .row>div {
@@ -567,7 +567,7 @@ section {
         }
 
         &.homes {
-            background: url(./img/hero-homes.png) center bottom no-repeat;
+            background: url(./img/hero-homes.jpg) center bottom no-repeat;
             background-size: cover;
         }
 
@@ -585,7 +585,7 @@ section {
         }
 
         &.fmapi {
-            background: url(./img/hero-fmapi.png) center center no-repeat;
+            background: url(./img/hero-fmapi.jpg) center center no-repeat;
             background-size: cover;
 
             .row>div {
