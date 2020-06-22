@@ -1,4 +1,4 @@
-@import url(bootstrap-4/css/bootstrap.min.css);@import url(bootstrap-4/css/jumbotron.css);@font-face{font-family:"sf-pro-text_regular";src:url("fonts/sf-pro-text_regular.woff2") format("woff2")}
+@import url(./bootstrap-4/css/bootstrap.min.css);@font-face{font-family:"sf-pro-text_regular";src:url("fonts/sf-pro-text_regular.woff2") format("woff2")}
 @font-face{font-family:"sf-pro-text_medium";src:url("fonts/sf-pro-text_medium.woff2") format("woff2")}
 @font-face{font-family:"San Francisco";font-weight:100;src:url("fonts/sanfranciscodisplay-ultralight-webfont.woff2")}
 @font-face{font-family:"San Francisco";font-weight:200;src:url("fonts/sanfranciscodisplay-ultralight-webfont.woff2")}
@@ -9,6 +9,8 @@ body{font-family:"sf-pro-text_regular",Roboto,"Helvetica Neue",Arial,sans-serif}
 a{color:#0070c9}
 p{color:#888}
 .btn-primary{background-color:#0070c9}
+.bg-brand-orange{background-color:#f4a62c}
+.brand-orange{color:#f4a62c}
 h1,h2,h3,h4{font-family:"sf-pro-text_medium",Roboto,"Helvetica Neue",Arial,sans-serif;text-align:center}
 h1{font-weight:bold;font-size:4rem;letter-spacing:-0.03em}
 h2{font-weight:500;font-size:2.5rem}
@@ -22,7 +24,7 @@ h3{font-weight:normal;font-size:1.25rem;color:#888}
 .jumbotron{border-radius:0;background:url(./img/hero-jumbotron.png) center bottom no-repeat;background-size:cover;min-height:200px;margin-bottom:60px}
 hr{width:80%;margin-bottom:10px}
 .btn-asteric{font-size:.8em}
-footer{text-align:center;width:100%;font-size:.8em}
+footer{text-align:center;font-size:.8em}
 .btn-container{width:100%;margin:0 auto;text-align:center}
 section{text-align:center;padding:100px 20px}
 section.first{margin-top:40px;padding:60px 20px !important}
@@ -30,7 +32,29 @@ section.odd{background-color:#f2f2f2}
 section.even{background-color:#fff}
 section.books{padding:40px !important;background-color:#333}
 section.books .btn-asteric{margin:0}
-section.books h3{color:white !important}
+section.books h2,section.books h3{color:white !important}
+section.live-events{background-color:#333;color:white}
+section.live-events .btn-outline-light:hover{color:#fff;background-color:#0d70ca}
+section.live-events img.kangaroo{width:50%;margin-top:30px}
+section.live-events .wrap-date{border:#fff 1px solid;border-radius:6px;padding:16px}
+section.live-events .btn[aria-expanded="true"]{background:#f4a62c;box-shadow:none}
+section.live-events .collapse .card-title,section.live-events .collapsing .card-title,section.live-events .show .card-title{color:#333}
+section.live-events .collapsing{-webkit-transition-delay:.2s;transition-delay:.2s;visibility:hidden}
+section.live-events .event-details{color:#333;text-align:left;padding-top:20px}
+section.live-events .event-details .card{border:1px solid #fff !important}
+section.live-events .event-details .card h2{color:#333 !important}
+section.live-events .event-details .arrow{width:0;height:0;border-style:solid;border-width:0 16px 20px 16px;border-color:transparent transparent #fff transparent;border-style:inset;-webkit-transform:rotate(360deg)}
+section.live-events .event-details.first .arrow{margin-left:12%}
+section.live-events .event-details.second .arrow{margin-left:80%}
+section.live-events.btn-asteric{margin:0}
+section.live-events h3{color:white !important}
+section.live-events h2{color:white !important}
+section.live-events.list-group{width:80%}
+section.misc{background:#f7c98a;padding-top:60px !important;padding-bottom:60px !important}
+section.misc .has-border{border:2px solid #000;padding:10px;border-radius:6px}
+section.misc p{color:#000}
+section.misc .news img,section.misc .learn img{width:70%}
+section.misc .news a,section.misc .learn a{color:#000;font-weight:bold;text-decoration:underline}
 section img{margin-bottom:30px;max-height:300px;max-width:300px}
 section .img-fluid{max-width:80%}
 section h2.main-title{font-weight:200}
@@ -41,12 +65,14 @@ section h2.fm_api_title br{display:none}
 section.hero{background:blue}
 section.hero>div>.row>div{border-radius:6px;background-color:white;min-height:120px;box-shadow:0 0 10px rgba(0,0,0,0.6)}
 section.hero>div>.row>div img{margin-bottom:0}
-section.hero.books{background:url(./img/hero-books.png) center -10px no-repeat;background-size:cover}
+section.hero.books{background:url(./img/hero-books.jpg) center -10px no-repeat;background-size:cover}
 section.hero.books .row>div img{max-height:100px}
-section.hero.damo{background:url(./img/hero-damo.png) center bottom no-repeat;background-size:cover}
+section.hero.damo{background:url(./img/hero-damo.jpg) center bottom no-repeat;background-size:cover}
 section.hero.damo .row>div{box-shadow:0 0 10px rgba(113,28,19,0.6)}
-section.hero.homes{background:url(./img/hero-homes.png) center bottom no-repeat;background-size:cover}
-section.hero.fmapi{background:url(./img/hero-fmapi.png) center center no-repeat;background-size:cover}
+section.hero.homes{background:url(./img/hero-homes.jpg) center bottom no-repeat;background-size:cover}
+section.hero.weather{background:url(./img/hero-weather.jpg) center bottom no-repeat;background-size:cover}
+section.hero.weather img{width:80%}
+section.hero.fmapi{background:url(./img/hero-fmapi.jpg) center center no-repeat;background-size:cover}
 section.hero.fmapi .row>div{box-shadow:0 0 10px rgba(113,28,19,0.6)}
 .v2 section:not(.hero){padding:150px 20px}
 @media screen and (orientation:landscape){.jumbotron{min-height:320px}
@@ -54,10 +80,14 @@ section.hero.fmapi .row>div{box-shadow:0 0 10px rgba(113,28,19,0.6)}
 }@media(min-width:576px) and (max-width:767px){.breadcrumbs .col-sm-12{padding:0}
 }@media(min-width:576px){.breadcrumbs .btn-sm{margin-right:0}
 .jumbotron{min-height:300px}
+section.live-events img.kangaroo{height:100px;width:auto;margin-top:-16px}
 }@media(min-width:768px){h1,h2,h3,h4{text-align:left}
 .cta h2,.cta p,h2.main-title,.cta h3{width:100%;text-align:center}
 .jumbotron{background:url(img/hero-jumbotron.png) center bottom no-repeat;background-size:cover;min-height:360px}
 section.first{margin-top:100px}
+section.live-events .event-details{text-align:center}
+section.live-events .event-details .card{padding:30px}
+section.misc .has-border{padding:20px}
 section{text-align:left}
 section h1,section h2,section h3{width:auto}
 section img{margin-bottom:0}
@@ -66,6 +96,7 @@ section.hero>div>.row>div{min-height:180px}
 }@media(min-width:992px){.breadcrumbs .btn-sm{margin-right:24px}
 .jumbotron{background:url(img/hero-jumbotron.png) center bottom no-repeat;background-size:cover;min-height:440px}
 section.hero.books{background-position:center -100px}
+}@media(min-width:1024px){section.hero.weather img{width:60%}
 }@media(min-width:1200px){.breadcrumbs .btn-sm{margin-right:38px}
 .jumbotron{background:url(img/hero-jumbotron-lg.png) center bottom no-repeat;background-size:cover;min-height:400px}
 section.hero.books{background-position:center -150px}
